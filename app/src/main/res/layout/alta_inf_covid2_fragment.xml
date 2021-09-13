@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".altaInformeCOV.AltaInfCOVID2">
+
+    <ProgressBar
+        android:id="@+id/progressBarAltaInfCOV2"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/txtCabeceraCOV"
+            android:textSize="25sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TableRow
+                android:paddingBottom="5dp">
+                <TextView
+                    android:id="@+id/txtT1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temperatura: "
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtTemperatura2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:text="Valor"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="2px"
+                android:background="#BDBDBD">
+                <TextView
+                    android:layout_span="2"
+                    android:layout_height="1px"
+                    android:layout_width="fill_parent"
+                    android:text="">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
+                <TextView
+                    android:id="@+id/txtT2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saturacion de Oxigeno: "
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtSaturacion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:text="Valor"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="2px"
+                android:background="#BDBDBD">
+                <TextView
+                    android:layout_span="2"
+                    android:layout_height="1px"
+                    android:layout_width="fill_parent"
+                    android:text="">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
+                <TextView
+                    android:id="@+id/txtT3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Tienes tos?"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtTos2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:text="Valor"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="2px"
+                android:background="#BDBDBD">
+                <TextView
+                    android:layout_span="2"
+                    android:layout_height="1px"
+                    android:layout_width="fill_parent"
+                    android:text="">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
+                <TextView
+                    android:id="@+id/txtT4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Dificultad al respirar?"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtDRespi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:text="Valor"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="2px"
+                android:background="#BDBDBD">
+                <TextView
+                    android:layout_span="2"
+                    android:layout_height="1px"
+                    android:layout_width="fill_parent"
+                    android:text="">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
+                <TextView
+                    android:id="@+id/txt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Dolor de cabeza?"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtDCabeza2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:text="Valor"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="2px"
+                android:background="#BDBDBD">
+                <TextView
+                    android:layout_span="2"
+                    android:layout_height="1px"
+                    android:layout_width="fill_parent"
+                    android:text="">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
+                <TextView
+                    android:id="@+id/txt6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Dolor de garganta?"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtDGarganta2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:text="Valor"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="2px"
+                android:background="#BDBDBD">
+                <TextView
+                    android:layout_span="2"
+                    android:layout_height="1px"
+                    android:layout_width="fill_parent"
+                    android:text="">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
+                <TextView
+                    android:id="@+id/txt7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Dolor muscular?"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtDMuscular2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:text="Valor"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="2px"
+                android:background="#BDBDBD">
+                <TextView
+                    android:layout_span="2"
+                    android:layout_height="1px"
+                    android:layout_width="fill_parent"
+                    android:text="">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha de Alta:"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtFechaAlta2"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:text="Valor"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="2px"
+                android:background="#BDBDBD">
+                <TextView
+                    android:layout_span="2"
+                    android:layout_height="1px"
+                    android:layout_width="fill_parent"
+                    android:text="">
+                </TextView>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/idBtnConfAltaCOV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/btnMandar"
+            android:layout_marginStart="260dp"/>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resumenInformes.ProximosInformes">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtProxInf"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:text="@string/proxInf">
+        </TextView>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+            <TableRow
+                android:layout_height="2px"
+                android:background="#BDBDBD">
+                <TextView
+                    android:layout_span="2"
+                    android:layout_height="1px"
+                    android:layout_width="fill_parent"
+                    android:text="">
+                </TextView>
+            </TableRow>
+
+        </TableLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idtxtInformesSig"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:text="listado de informes">
+        </TextView>
+
+
+    </LinearLayout>
+
+</FrameLayout>

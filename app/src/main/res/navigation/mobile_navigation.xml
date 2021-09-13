@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.pruebajava.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_resumenInformeCHF"
+            app:destination="@id/navigation_resumenInformeCHF" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_resumenInformeCOV"
+            app:destination="@id/navigation_resumenInformeCOV" />
+        <action
+            android:id="@+id/action_navigation_home_to_proximosInformes"
+            app:destination="@id/navigation_proximosInformes" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_perfil"
+        android:name="com.example.pruebajava.ui.perfil.DatosPerfilFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_datos_perfil" >
+        <action
+            android:id="@+id/action_navigation_perfil_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_altaInforme"
+        android:name="com.example.pruebajava.altaInformeCA.AltaInformeFragment"
+        android:label="Alta Informe CHF"
+        tools:layout="@layout/alta_informe_fragment">
+        <action
+            android:id="@+id/action_navigation_altaInforme_to_altaInforme2Fragment"
+            app:destination="@id/navigation_altaInforme2" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_altaInfCOVID"
+        android:name="com.example.pruebajava.altaInformeCOV.AltaInfCOVID"
+        android:label="Alta Informe COVID-19"
+        tools:layout="@layout/alta_inf_covid_fragment">
+        <action
+            android:id="@+id/action_navigation_altaInfCOVID_to_altaInfCOVID2"
+            app:destination="@id/navigation_altaInfCOVID2" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_altaInforme2"
+        android:name="com.example.pruebajava.altaInformeCA.AltaInforme2Fragment"
+        android:label="Confirmar Alta"
+        tools:layout="@layout/alta_informe2_fragment" >
+        <action
+            android:id="@+id/action_navigation_altaInforme2_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_salir"
+        android:name="com.example.pruebajava.ui.salir.SalirFragment"
+        android:label="fragment_salir"
+        tools:layout="@layout/fragment_salir" >
+        <action
+            android:id="@+id/action_navigation_salir_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_altaInfCOVID2"
+        android:name="com.example.pruebajava.altaInformeCOV.AltaInfCOVID2"
+        android:label="Confirmar Alta"
+        tools:layout="@layout/alta_inf_covid2_fragment" >
+        <action
+            android:id="@+id/action_navigation_altaInfCOVID2_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_resumenInformeCHF"
+        android:name="com.example.pruebajava.resumenInformes.ResumenInformeCHF"
+        android:label="Detalles Informes"
+        tools:layout="@layout/resumen_informe_chf_fragment" />
+    <fragment
+        android:id="@+id/navigation_resumenInformeCOV"
+        android:name="com.example.pruebajava.resumenInformes.ResumenInformeCOV"
+        android:label="Detalles Informes"
+        tools:layout="@layout/resumen_informe_cov_fragment" />
+    <fragment
+        android:id="@+id/navigation_proximosInformes"
+        android:name="com.example.pruebajava.resumenInformes.ProximosInformes"
+        android:label="Fechas Proximos Informes"
+        tools:layout="@layout/proximos_informes_fragment" />
+    <fragment
+        android:id="@+id/navigation_informes"
+        android:name="com.example.pruebajava.ui.informes.InformesFragment"
+        android:label="Informes"
+        tools:layout="@layout/fragment_informes">
+        <action
+            android:id="@+id/action_informesFragment_to_navigation_altaInforme"
+            app:destination="@id/navigation_altaInforme" />
+        <action
+            android:id="@+id/action_informesFragment_to_navigation_altaInfCOVID"
+            app:destination="@id/navigation_altaInfCOVID" />
+    </fragment>
+</navigation>

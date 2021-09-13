@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".altaInformeCOV.AltaInfCOVID">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTemperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:textSize="20sp"
+            android:text="Selecione la temperatura"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="36.5 grados"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="135dp"
+            android:id="@+id/idTxtSeekbarTemperatura"
+            android:textSize="20sp"/>
+
+        <SeekBar
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="120dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:max="450"
+            android:min="320"
+            android:progress="365"
+            android:id="@+id/idSeekbarTemperatura"/>
+
+        <TextView
+            android:id="@+id/txtSaturacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="Selecione la saturacion de oxigeno"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="98 %"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="175dp"
+            android:id="@+id/idTxtSeekbarSaturacion"
+            android:textSize="20sp"/>
+
+        <SeekBar
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="120dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:max="100"
+            android:min="80"
+            android:progress="98"
+            android:id="@+id/idSeekbarSaturacion"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtTos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="¿Tienes tos?"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/rbTos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="50dp">
+
+                    <RadioButton
+                        android:id="@+id/rbTosSI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="SI" />
+
+                    <RadioButton
+                        android:id="@+id/rbTosNO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_height="2px"
+                android:background="#BDBDBD">
+                <TextView
+                    android:layout_span="2"
+                    android:layout_height="1px"
+                    android:layout_width="fill_parent"
+                    android:text="">
+                </TextView>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtDRespi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="¿Dificultad al respirar?"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/rbDRespi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="50dp">
+
+                    <RadioButton
+                        android:id="@+id/rbDRespiSI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="SI" />
+
+                    <RadioButton
+                        android:id="@+id/rbDRespiNO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_height="2px"
+                android:background="#BDBDBD">
+                <TextView
+                    android:layout_span="2"
+                    android:layout_height="1px"
+                    android:layout_width="fill_parent"
+                    android:text="">
+                </TextView>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtDCabeza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="¿Dolor de cabeza?"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/rbDCabeza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="50dp">
+
+                    <RadioButton
+                        android:id="@+id/rbDCabezaSI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="SI" />
+
+                    <RadioButton
+                        android:id="@+id/rbDCabezaNO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_height="2px"
+                android:background="#BDBDBD">
+                <TextView
+                    android:layout_span="2"
+                    android:layout_height="1px"
+                    android:layout_width="fill_parent"
+                    android:text="">
+                </TextView>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtDGarganta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="¿Dolor de garganta?"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/rbDGarganta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="50dp">
+
+                    <RadioButton
+                        android:id="@+id/rbDGargantaSI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="SI" />
+
+                    <RadioButton
+                        android:id="@+id/rbDGargantaNO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_height="2px"
+                android:background="#BDBDBD">
+                <TextView
+                    android:layout_span="2"
+                    android:layout_height="1px"
+                    android:layout_width="fill_parent"
+                    android:text="">
+                </TextView>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtDMuscular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="¿Dolor muscular?"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/rbDMuscular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="50dp">
+
+                    <RadioButton
+                        android:id="@+id/rbDMuscularSI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="SI" />
+
+                    <RadioButton
+                        android:id="@+id/rbDMuscularNO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_height="2px"
+                android:background="#BDBDBD">
+                <TextView
+                    android:layout_span="2"
+                    android:layout_height="1px"
+                    android:layout_width="fill_parent"
+                    android:text="">
+                </TextView>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/idBtnContAltaCOV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnContinuar"
+            android:textSize="30sp"
+            android:layout_marginStart="260dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>
